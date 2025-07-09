@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Тест</title>
+    <link rel="stylesheet" href="src/style.css"/>
+</head>
+<body>
+<h3>Проверка изученных слов в тестовой форме</h3>
+
+<form action="input1.php" method="post">
+
+    <b><label>Напишите вашу фамилию и имя: <input type="text" name="student's_name"/></label></b>
+    <hr/>
+    <ol>
+        <li><p><b>Выберите правильный перевод слова "ПРЕДПОЧИТАТЬ":</b></p>
+            <p><img src="/prefer.jpg" alt="картинка"/></p>
+            <input type="radio" name="question_1" value="Worry"> Worry
+            <input type="radio" name="question_1" value="Use"> Use
+            <input type="radio" name="question_1" value="Prefer"> Prefer
+        </li>
+
+        <li><p><b>Выберите правильный перевод слова "НУЖДАТЬСЯ":</b></p>
+            <p><img src="/need.jpg" alt="картинка"/></p>
+            <input type="radio" name="question_2" value="Remember"> Remember
+            <input type="radio" name="question_2" value="Control"> Control
+            <input type="radio" name="question_2" value="Need"> Need
+        </li>
+
+        <li><p><b>Выберите правильный перевод слова "ДРУГИЕ":</b></p>
+            <p><img src="/other.jpg" alt="картинка"/></p>
+            <input type="radio" name="question_3" value="Other"> Other
+            <input type="radio" name="question_3" value="Another"> Another
+            <input type="radio" name="question_3" value="Those"> Those
+        </li>
+
+        <li><p><label><b>Как пишется на английском "БЫСТРО, БЫСТРЫЙ": <input type="text" name="question_4"/></b></label></p>
+            <p><img src="/fast.jpg" alt="картинка"/></p>
+        </li>
+
+        <li><p><b>Выберите один или несколько вариантов перевода слова "YOU":</b></p>
+            <input type="checkbox" name="question_5" value="Ты"> Ты<Br>
+            <input type="checkbox" name="question_5" value="Я"> Я<Br>
+            <input type="checkbox" name="question_5" value="Вам"> Вам<Br>
+            <input type="checkbox" name="question_5" value="Мы"> Мы
+        </li>
+
+        <li><p><b>Напишите перевод слов, каждое слово с новой строки:</b></p>
+            <ul>
+                <li>Professionally</li>
+                <li>Remember</li>
+                <li>Slowly</li>
+                <li>Website</li>
+                <li>Who</li>
+            </ul>
+            <p><textarea rows="5" cols="25" name="question_6"> </textarea></p></li>
+
+        <li><p><b>Выберите правильный перевод слова "AGAIN":</b></p>
+            <p><img src="/again.jpg" alt="картинка"/></p>
+            <select name="question_7">
+                <option value="Адрес">Адрес</option>
+                <option value="Снова">Снова</option>
+                <option value="Другой">Другой</option>
+                <option value="Общаться">Общаться</option>
+            </select>
+
+        <li><p><b>Выберите правильный перевод слова "GREAT"(один или несколько вариантов):</b></p>
+            <select name="question_8" multiple>
+                <option value="Огромный">Огромный</option>
+                <option value="Большой">Большой</option>
+                <option value="Другой">Другой</option>
+                <option value="Великий">Великий</option>
+            </select>
+
+    </ol>
+    <p><input type="submit" value="Отправить"></p>
+</form>
+
+<br/>
+<a target="_blank" href="/answers.html">Проверьте себя</a>
+</body>
+</html>
